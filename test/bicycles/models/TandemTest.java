@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TendemTest {
+public class TandemTest {
   @Test
     public  void ShouldAccelerate(){
       Tandem tdm = new Tandem();
