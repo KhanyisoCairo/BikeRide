@@ -1,5 +1,7 @@
 package bicycles;
 
+import bicycles.models.Bicycle;
+
 public class BicycleFromSpec extends BicycleBase {
     private final BicycleSpecification bicycleSpecification;
 
@@ -8,12 +10,18 @@ public class BicycleFromSpec extends BicycleBase {
     }
 
     @Override
-    public void accelerate() {
+    public void accelerate(
+    ) {
 
     }
 
     @Override
     public void brake() {
 
+    }
+
+    @Override
+    public BicycleType getBicycleType() {
+        return bicycleSpecification.bicycleType;
     }
 }

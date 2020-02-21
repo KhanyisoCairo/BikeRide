@@ -1,6 +1,7 @@
 package bicycles.models;
 
 import bicycles.BicycleBase;
+import bicycles.BicycleType;
 
 public class MountainBike extends BicycleBase {
 
@@ -18,5 +19,10 @@ public class MountainBike extends BicycleBase {
     @Override
     public void stop() {
         super.stop();
+    }
+
+    @Override
+    public BicycleType getBicycleType() {
+        return BicycleType.MountainBike;
     }
 }

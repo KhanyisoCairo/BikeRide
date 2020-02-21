@@ -1,17 +1,32 @@
 package bicycles;
 
+import bicycles.models.Bicycle;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FunRide {
-    List<BicycleFromSpec> list = new ArrayList<>();
+    List<Bicycle> list = new ArrayList<>();
+    int getCount;
 
-    public void accept(BicycleFromSpec bicycleSpecification) {
-        if (!list.contains(bicycleSpecification)) list.add(bicycleSpecification);
+    public  int getEnteredCount(Bicycle bike) {
+     return list.size();
+    }
+
+    public void accept(Bicycle bike) {
+        if (!list.contains(bike)){
+            list.add(bike);
+        };
     }
 
     public int getCountForType(BicycleType bicycleType) {
-        return list.size();
+            for(Bicycle i : list){
+                if (i.getBicycleType() == bicycleType){
+                    getCount++;
+                }
+
+            }
+            return  getCount;
     }
 
 }
