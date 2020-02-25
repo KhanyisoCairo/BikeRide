@@ -12,12 +12,12 @@ public class FunRideTest {
     public  void  shouldAcceptBicyclesMountainBike(){
         BicycleSpecification bicycleSpecification = new BicycleSpecification(5, -3, BicycleType.MountainBike);
         BicycleFromSpec bike = new BicycleFromSpec(bicycleSpecification);
-        FunRide funRide = new FunRide(5);
+        FunRide funRide = new FunRide(2);
 
         funRide.accept(bike);
         funRide.accept(bike);
 
-        assertEquals(2, funRide.getCountForType(BicycleType.MountainBike));
+        assertEquals(1, funRide.getCountForType(BicycleType.MountainBike));
     }
     @Test
     public  void  shouldAcceptBicyclesRoadBike(){
@@ -39,7 +39,7 @@ public class FunRideTest {
         funRide.accept(bike);
         funRide.accept(bike);
 
-        assertEquals(2, funRide.getCountForType(BicycleType.Tandem));
+        assertEquals(1, funRide.getCountForType(BicycleType.Tandem));
     }
     @Test
     public void shouldGetEnteredBicycles(){

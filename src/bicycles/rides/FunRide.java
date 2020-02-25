@@ -2,6 +2,7 @@ package bicycles.rides;
 
 import bicycles.BicycleType;
 import bicycles.models.Bicycle;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +20,12 @@ public class FunRide {
     }
 
     public void accept(Bicycle bike) {
-        if (!list.contains(bike) || BikeMax > 0 ){
+        if (!list.contains(bike) && list.size() < BikeMax ){
             list.add(bike);
-        };
+        }
+        else {
+            System.out.println("rejected");
+        }
     }
 
     public int getCountForType(BicycleType bicycleType) {
