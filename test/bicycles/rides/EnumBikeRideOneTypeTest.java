@@ -1,6 +1,6 @@
 package bicycles.rides;
 
-import bicycles.Specification.BicycleSpecification;
+import bicycles.specification.BicycleSpecification;
 import bicycles.BicycleType;
 import org.junit.jupiter.api.Test;
 

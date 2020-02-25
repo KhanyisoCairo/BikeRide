@@ -1,4 +1,4 @@
-package bicycles.Specification;
+package bicycles.specification;
 
 import bicycles.BicycleBase;
 import bicycles.BicycleType;
