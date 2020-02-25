@@ -32,6 +32,6 @@ public class BikeRideOne implements BikeRide {
 
     @Override
     public BicycleType getBicycleType() {
-        return null;
+        return bicycleBase.getBicycleType();
     }
 }

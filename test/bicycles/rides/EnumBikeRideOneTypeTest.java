@@ -1,13 +1,12 @@
 package bicycles.rides;
 
-import bicycles.BicycleSpecification;
+import bicycles.Specification.BicycleSpecification;
 import bicycles.BicycleType;
-import bicycles.models.MountainBike;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EnumBicycleTypeTest {
+public class EnumBikeRideOneTypeTest {
     @Test
     void MountainBikeTest(){
         BicycleSpecification bike = new BicycleSpecification(5, -3, BicycleType.MountainBike);

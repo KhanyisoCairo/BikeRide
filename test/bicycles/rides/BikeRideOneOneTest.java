@@ -1,6 +1,5 @@
 package bicycles.rides;
 
-import bicycles.BikeRide;
 import bicycles.models.MountainBike;
 import bicycles.models.RoadBike;
 import bicycles.models.Tandem;
@@ -8,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BikeRideOneTest  {
+public class BikeRideOneOneTest {
     @Test
     public void mountainBike(){
         MountainBike mb = new MountainBike();

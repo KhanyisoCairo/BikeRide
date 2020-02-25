@@ -1,5 +1,6 @@
-package bicycles;
+package bicycles.rides;
 
+import bicycles.BicycleType;
 import bicycles.models.Bicycle;
 
 import java.util.ArrayList;
@@ -7,19 +8,24 @@ import java.util.List;
 
 public class FunRide {
     List<Bicycle> list = new ArrayList<>();
-    int getCount;
+    int BikeMax;
+
+     public  FunRide(int BikeMax){
+         this.BikeMax = BikeMax;
+     }
 
     public  int getEnteredCount(Bicycle bike) {
      return list.size();
     }
 
     public void accept(Bicycle bike) {
-        if (!list.contains(bike)){
+        if (!list.contains(bike) || BikeMax > 0 ){
             list.add(bike);
         };
     }
 
     public int getCountForType(BicycleType bicycleType) {
+        int getCount =  0;
             for(Bicycle i : list){
                 if (i.getBicycleType() == bicycleType){
                     getCount++;

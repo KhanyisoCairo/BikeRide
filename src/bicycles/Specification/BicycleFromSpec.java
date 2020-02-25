@@ -1,6 +1,7 @@
-package bicycles;
+package bicycles.Specification;
 
-import bicycles.models.Bicycle;
+import bicycles.BicycleBase;
+import bicycles.BicycleType;
 
 public class BicycleFromSpec extends BicycleBase {
     private final BicycleSpecification bicycleSpecification;
@@ -12,12 +13,12 @@ public class BicycleFromSpec extends BicycleBase {
     @Override
     public void accelerate(
     ) {
-
+        changeSpeed(bicycleSpecification.getAccelerationSpeed());
     }
 
     @Override
     public void brake() {
-
+        changeSpeed(bicycleSpecification.getBrakeSpeed());
     }
 
     @Override
