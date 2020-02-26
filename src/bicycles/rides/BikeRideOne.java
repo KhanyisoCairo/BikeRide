@@ -1,37 +1,30 @@
 package bicycles.rides;
 
-import bicycles.BicycleBase;
 import bicycles.BicycleType;
-import bicycles.BikeRide;
+import bicycles.models.Bicycle;
 
 public class BikeRideOne implements BikeRide {
+    private Bicycle bicycle;
 
-    private BicycleBase bicycleBase;
-
-    public BikeRideOne(BicycleBase bicycleBase){
-        this.bicycleBase = bicycleBase;
+    public BikeRideOne(Bicycle bicycle){
+        this.bicycle = bicycle;
 
     }
 
-    public static void main(String[] args) {
-     //   BicycleBase bicycleBase = new BicycleBase();
-       // BikeRide bikeRide = new BikeRide(bicycleBase);
-        //bikeRide.ride();
-    }
     public void ride() {
-        this.bicycleBase.accelerate();
-        this.bicycleBase.accelerate();
-        this.bicycleBase.accelerate();
-        this.bicycleBase.brake();
-        this.bicycleBase.brake();
-        this.bicycleBase.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.brake();
+        this.bicycle.brake();
+        this.bicycle.accelerate();
     }
     public int currentSpeed(){
-        return bicycleBase.currentSpeed();
+        return bicycle.currentSpeed();
     }
 
     @Override
     public BicycleType getBicycleType() {
-        return bicycleBase.getBicycleType();
+        return bicycle.getBicycleType();
     }
 }

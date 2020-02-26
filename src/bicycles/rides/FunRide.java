@@ -14,8 +14,7 @@ public class FunRide {
      public  FunRide(int BikeMax){
          this.BikeMax = BikeMax;
      }
-
-    public  int getEnteredCount(Bicycle bike) {
+    public  int getEnteredCount() {
      return list.size();
     }
 
@@ -27,16 +26,13 @@ public class FunRide {
             System.out.println("rejected");
         }
     }
-
     public int getCountForType(BicycleType bicycleType) {
         int getCount =  0;
             for(Bicycle i : list){
                 if (i.getBicycleType() == bicycleType){
                     getCount++;
                 }
-
             }
             return  getCount;
     }
-
 }
