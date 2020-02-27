@@ -35,8 +35,8 @@ class BicycleFromSpecTest {
         roadBike.brake();
         TandemBike.brake();
 
-        assertEquals(roadBike.currentSpeed(),-4);
-        assertEquals(TandemBike.currentSpeed(),-7);
+        assertEquals(roadBike.currentSpeed(),0);
+        assertEquals(TandemBike.currentSpeed(),0);
 
     }
 
