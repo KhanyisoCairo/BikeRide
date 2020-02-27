@@ -25,7 +25,7 @@ class BikeRideOneTest {
         BikeRide bikeRideTwo = new BikeRideOne(bicycle);
 
         bikeRideTwo.ride();
-        assertEquals(36, bikeRideTwo.currentSpeed());
+        assertEquals(20, bikeRideTwo.currentSpeed());
     }
     @Test
     void ride3() {
